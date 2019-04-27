@@ -5,7 +5,7 @@ MAINTAINER atiger77
 RUN apt-get update && apt-get install -y \
                 gcc \
                 gettext \
-                mysql-client libmysqlclient-dev \
+                mysql-client default-libmysqlclient-dev \
         --no-install-recommends && rm -rf /var/lib/apt/lists/*
 
 ENV DJANGO_VERSION 1.9.8
